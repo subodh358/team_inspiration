@@ -30,4 +30,4 @@ RUN adduser -D myuser
 USER myuser
 
 # run gunicorn
-CMD gunicorn team_inspiration.wsgi:application --bind 0.0.0.0:$PORT
+ENTRYPOINT gunicorn team_inspiration.wsgi:application --bind 0.0.0.0:$PORT
