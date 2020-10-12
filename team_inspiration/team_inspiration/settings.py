@@ -50,6 +50,8 @@ INSTALLED_APPS = [
     'home',
 ]
 
+AUTH_USER_MODEL = 'core.CustomUser' 
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',  # new
@@ -92,7 +94,7 @@ WSGI_APPLICATION = 'team_inspiration.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'inspiration',
+        'NAME': 'insp',
         'USER': 'subodh',
         'PASSWORD': 'pass12345',
         'HOST': 'localhost',
